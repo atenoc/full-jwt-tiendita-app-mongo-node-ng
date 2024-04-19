@@ -1,0 +1,99 @@
+[{
+  "_id": {
+    "$oid": "6176f2a84919ae2490e6b180"
+  },
+  "nombre": "Mi dibujo",
+  "descripcion": "En tatuaje",
+  "precio": "50",
+  "imagenPath": "uploads\\70e070db-aeea-444f-a7ee-98dea6a8b572.JPG",
+  "createdAt": {
+    "$date": "2021-10-25T18:08:40.424Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-25T18:08:40.424Z"
+  }
+},{
+  "_id": {
+    "$oid": "6176fa644919ae2490e6b181"
+  },
+  "nombre": "Tatuaje 2",
+  "descripcion": "tatuaje 2",
+  "precio": "100",
+  "imagenPath": "uploads\\a17ff1b3-1e4e-4e71-b4b3-9857957bb063.JPG",
+  "createdAt": {
+    "$date": "2021-10-25T18:41:40.722Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-25T18:41:40.722Z"
+  }
+},{
+  "_id": {
+    "$oid": "6176fa7a4919ae2490e6b182"
+  },
+  "nombre": "tatuaje 3",
+  "descripcion": "tatuaje 3",
+  "precio": "5",
+  "imagenPath": "uploads\\187de033-3308-4b31-905a-3824559cf91d.JPG",
+  "createdAt": {
+    "$date": "2021-10-25T18:42:02.656Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-25T18:42:02.656Z"
+  }
+},{
+  "_id": {
+    "$oid": "6176fac74919ae2490e6b183"
+  },
+  "nombre": "tatuaje n",
+  "descripcion": "tatuaje n",
+  "precio": "2",
+  "imagenPath": "uploads\\0f5f34f7-d93c-43c6-887a-814ab8f97416.JPG",
+  "createdAt": {
+    "$date": "2021-10-25T18:43:19.561Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-25T18:43:19.561Z"
+  }
+},{
+  "_id": {
+    "$oid": "6176fb1b4919ae2490e6b184"
+  },
+  "nombre": "sdfsf",
+  "descripcion": "sdfs",
+  "precio": "8",
+  "imagenPath": "uploads\\ed5d47cc-b53a-4508-9082-4c7eff367895.png",
+  "createdAt": {
+    "$date": "2021-10-25T18:44:43.963Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-25T18:44:43.963Z"
+  }
+},{
+  "_id": {
+    "$oid": "6176fb314919ae2490e6b185"
+  },
+  "nombre": "fgh",
+  "descripcion": "fgh",
+  "precio": "8",
+  "imagenPath": "uploads\\799ed308-2b93-4323-92d4-78cd6b06df6b.jpeg",
+  "createdAt": {
+    "$date": "2021-10-25T18:45:05.579Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-25T18:45:05.579Z"
+  }
+},{
+  "_id": {
+    "$oid": "61770f3e4919ae2490e6b186"
+  },
+  "nombre": "wewer",
+  "descripcion": "wer",
+  "precio": "4",
+  "imagenPath": "uploads\\d8a38f9b-a555-47da-913a-d38d8ffba30f.png",
+  "createdAt": {
+    "$date": "2021-10-25T20:10:38.215Z"
+  },
+  "updatedAt": {
+    "$date": "2021-10-25T20:10:38.215Z"
+  }
+}]

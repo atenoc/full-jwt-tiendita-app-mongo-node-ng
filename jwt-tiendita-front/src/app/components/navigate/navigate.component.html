@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+    <div class="container">
+        <a class="navbar-brand" routerLink="">Tiendita
+
+            <img src="https://www.clipartmax.com/png/middle/288-2889965_digital-commerce-platforms-from-stores-to-marketplaces-online-shopping-logo-png.png"  class="rounded-circle" 
+            alt="" height="30px">
+          
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" routerLink="/home">Inicio </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <ng-container *ngIf="!authService.estaLogueado(); else login">
+                  
+                  <li class="nav-item">
+                    <button class="btn btn-secondary btn-sm" routerLink="/login">Ingresar</button>
+                  </li>
+                </ng-container>
+                <ng-template #login>
+                  <li class="nav-item">
+                    <a class="nav-link" routerLink="/admin">Admin</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" routerLink="/registro">Registrar</a>
+                  </li>
+                  <li class="nav-item">
+                    <button class="btn btn-info btn-sm" (click)="authService.logout()">Salir</button>
+                  </li>
+                </ng-template>
+              </ul>
+
+        </div>
+    </div>
+    
+</nav>

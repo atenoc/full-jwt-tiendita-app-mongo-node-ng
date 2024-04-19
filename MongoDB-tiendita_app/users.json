@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "63e6f5fc06dee59f79f8930a"
+  },
+  "nombre": "Car",
+  "email": "darkar_cero",
+  "password": "123456",
+  "createdAt": {
+    "$date": "2023-02-11T01:57:16.947Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T01:57:16.947Z"
+  }
+},{
+  "_id": {
+    "$oid": "63e6ff10555fef2da02e68d7"
+  },
+  "nombre": "Carmelo",
+  "email": "car.ate",
+  "password": "123",
+  "createdAt": {
+    "$date": "2023-02-11T02:36:00.094Z"
+  },
+  "updatedAt": {
+    "$date": "2023-02-11T02:36:00.094Z"
+  }
+}]

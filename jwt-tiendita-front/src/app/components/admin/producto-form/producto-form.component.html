@@ -1,0 +1,53 @@
+<div class="container mb-1" style="margin-top: 50px;">
+
+    <div class="col-lg-4 mx-auto">
+    
+        <div class="card">
+            <div class="card-header">Nuevo Producto</div>
+            <div class="card-body">
+    
+                <!-- <form (submit)="subirFoto(nombre, categoria, descripcion, precio)"> -->
+                <form (submit)="subirProducto(nombre, descripcion, precio)">
+                    <div class="form-group mb-3">
+                        <small class="form-text text-muted">Nombre:</small>
+                        <input type="text" class="form-control" placeholder="Escribe el nombre del producto" required #nombre>
+                    </div>
+                    <!-- 
+                    <div class="form-group">
+                        <small class="form-text text-muted">Categoria: </small>
+                        <select class="form-control" id="rol" required #categoria>
+                            <option></option>
+                            <option>SNACKS</option>
+                            <option>TACOS</option>
+                            <option>TORTAS</option>
+                            <option>BEBIDAS</option>
+                            <option>JUGOS</option>
+                            <option>REFRESCOS</option>
+                          </select>
+                    </div>
+                    -->
+                    <div class="form-group mb-3">
+                        <small class="form-text text-muted">Descripción (Opcional):</small>
+                        <textarea  rows="2" class="form-control" placeholder="Agrega una descripción" required #descripcion></textarea>
+                    </div>
+                    <div class="form-group mb-3">
+                        <small class="form-text text-muted">Precio $</small>
+                        <input type="text" class="form-control" placeholder="0" required #precio>
+                    </div>
+                     
+                    <div class="form-group">
+                        <small class="form-text text-muted">Da clic sobre la imágen para seleccionar una: </small>
+                        <input type="file" class="d-none" #fotoInput (change)="fotoSeleccionada($event)">
+                        <img [src]="photoSelected || 'assets/images/no-image.png'" (click)="fotoInput.click()" class="img-fluid" style="height: 150px;">
+                    </div>
+                    
+                    <button class="btn btn-primary btn-block">Agregar</button>
+    
+                </form>
+    
+            </div>
+        </div>
+    
+    </div>
+    
+    </div>

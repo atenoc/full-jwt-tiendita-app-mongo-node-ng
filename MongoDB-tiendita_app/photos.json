@@ -1,0 +1,9 @@
+[{
+  "_id": {
+    "$oid": "61732b1a23c2b648a087966f"
+  },
+  "nombre": "hola",
+  "descripcion": "des",
+  "imagenPath": "uploads\\7d3333d2-c859-45ff-94c5-339ef2578bf2.jpg",
+  "__v": 0
+}]

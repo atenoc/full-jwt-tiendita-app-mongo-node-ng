@@ -1,0 +1,37 @@
+
+<div class="container mt-1" >
+    <h6>Administración de Productos</h6>
+</div>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-2 p-2" *ngFor="let producto of productos?.reverse()">
+            <div class="card" >
+                <div class="card-header">
+                    <div >
+                        <img src="https://res.cloudinary.com/dnblt4j16/image/upload/v1622820116/gorichelas/126794_bfxby4.png" 
+                            width="30" style="float: right; cursor: pointer;" (click)="selectedCard(producto._id)">
+                    </div>   
+                    <strong>{{producto.nombre}}</strong>
+                </div>
+                
+                <div class="card" >
+                    <img [src]="'http://localhost:4000/' + producto.imagenPath" class="img-fluid" style="height: 125px; object-fit: cover; ">
+                    <div class="gradient"></div>
+                </div>
+
+                <div class="card-body" style="background-color: #daf5ff;">
+                    
+                    <div>{{producto.descripcion}}</div>
+                    <div><strong>{{producto.precio | currency}}</strong> </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+

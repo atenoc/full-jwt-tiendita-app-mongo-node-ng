@@ -1,0 +1,46 @@
+<div class="fondo">
+    
+    <div class="col-lg-3 mx-auto text-center" 
+        style="
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 150px;
+        ">
+
+        <div class="card" style="color: white; background-image: linear-gradient(to bottom, #1471ae, #328bc1, #50a6d3, #6fc1e4, #90dcf5);
+        box-shadow: 21px 34px 16px 2px rgba(0,0,0,0.49);
+        -webkit-box-shadow: 21px 34px 16px 2px rgba(0,0,0,0.49);
+        -moz-box-shadow: 21px 34px 16px 2px rgba(0,0,0,0.49);
+        ">
+            <div class="card-header " >
+                <h3>Acceso</h3>
+            </div>
+            <div class="card-body" >
+                <form (submit)="login()">
+
+                    <img src="https://atlas-content-cdn.pixelsquid.com/stock-images/red-shopping-bag-paper-AERB020-600.jpg" class="rounded-circle mb-3"  alt="" style="height: 100px;">
+
+                    <br>
+                    <div *ngIf="mensaje != ''" class="alert alert-warning" role="alert">
+                        {{ mensaje }}
+                    </div>
+     
+                    <div class="form-group">
+                        <label >Correo </label>
+                        <input type="email" [(ngModel)]="user.email" class="form-control" name="email" placeholder="ejemplo@gmail.com">
+                    </div>
+            
+                    <div class="form-group mt-4">
+                        <label >Contraseña </label>
+                        <input type="password" [(ngModel)]="user.password" class="form-control" name="password" >
+                    </div>
+            
+                    <button type="submit" class="btn btn-primary mt-5" style="width: 100%;">Entrar</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+</div>
